@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado para asegurar que los elementos se alineen desde arriba */
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Asegura que el formulario tenga un tamaño adecuado */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 28px; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
