@@ -1,72 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Cambiado para asegurar que los elementos se alineen desde arriba */
-    height: 100vh;
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.container {
-    width: 100%;
-    max-width: 600px; /* Asegura que el formulario tenga un tamaño adecuado */
-    margin-top: 20px; /* Espaciado superior */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-    font-size: 28px; /* Tamaño de fuente ajustado */
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #333;
-    text-align: center;
-}
-
-label {
-    font-weight: bold;
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    margin: 10px 0 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="file"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Agregar el botón para el menú desplegable */
+.dropbtn {
+    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 16px;
     font-size: 16px;
+    border: none;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
 }
