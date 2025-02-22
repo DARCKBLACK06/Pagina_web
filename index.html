@@ -55,7 +55,11 @@
             <input type="password" id="contrasena" name="contrasena" required>
 
             <label for="pregunta">Pregunta de seguridad:</label>
-            <input type="text" id="pregunta" name="pregunta" required>
+            <select id="pregunta" name="pregunta" required>
+                <option value="mascota">¿Cuál es el nombre de tu última mascota?</option>
+                <option value="fecha_importante">¿Qué fecha es importante para ti?</option>
+                <option value="ocupacion">¿A qué te dedicas actualmente?</option>
+            </select>
 
             <label for="respuesta">Respuesta:</label>
             <input type="text" id="respuesta" name="respuesta" required>
